@@ -11,7 +11,7 @@ export const SPACING = [6, 12, 18, 24, 30, 36, 42];
 export const TEXT_PRESETS = (isDark: boolean = false) =>
   StyleSheet.create({
     heading: {
-      color: isDark ? COLORS.light : COLORS.dark,
+      color: isDark ? COLORS.lighter : COLORS.darker,
       fontWeight: 'bold',
       fontSize: 24,
     } as TextStyle,
@@ -20,5 +20,5 @@ export const TEXT_PRESETS = (isDark: boolean = false) =>
 export const CONTAINER = (isDark: boolean = false) =>
   ({
     flex: 1,
-    backgroundColor: isDark ? COLORS.dark : COLORS.light,
+    backgroundColor: isDark ? COLORS.darker : COLORS.lighter,
   } as ViewStyle);

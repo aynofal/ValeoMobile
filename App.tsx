@@ -19,12 +19,13 @@ const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
-    backgroundColor: isDarkMode ? COLORS.darker : COLORS.lighter,
+    backgroundColor: isDarkMode ? COLORS.dark : COLORS.light,
+    flex: 1,
   };
 
   return (
     <NavigationContainer>
-      <SafeAreaView style={[backgroundStyle, {flex: 1}]}>
+      <SafeAreaView style={backgroundStyle}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
         <RootStack />
       </SafeAreaView>

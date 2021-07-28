@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import {View} from 'react-native';
 import HomeScreen from '../screens/home';
+import CounterScreen from '../screens/counter';
 
 type RootStackParamList = {
   Home: undefined;
@@ -31,7 +31,7 @@ export const RootStack = ({initialRouteName = 'Home'}: RootStackProps) => {
       />
       <Stack.Screen
         name="Counter"
-        component={() => <View />}
+        component={CounterScreen}
         options={{
           headerShown: false,
         }}

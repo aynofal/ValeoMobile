@@ -12,7 +12,7 @@ const HomeScreen: FC = () => {
   return (
     <View style={[CONTAINER(isDark), styles.container]}>
       <Text style={[heading, styles.headingText]}>
-        Welcome to Valeo Service test app
+        Welcome to Valeo Service test application
       </Text>
       <Button
         buttonText={'Proceed to Counter Screen'}
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   },
   headingText: {
     textAlign: 'center',
-    marginBottom: SPACING[1],
+    marginBottom: SPACING[3],
   },
 });
 
