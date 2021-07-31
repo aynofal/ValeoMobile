@@ -1,4 +1,4 @@
-package com.valeomobile;
+package com.valeo.exercise.ammar;
 
 import android.app.Application;
 import android.content.Context;
@@ -62,7 +62,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("com.valeomobile.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("com.valeo.exercise.ammar.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

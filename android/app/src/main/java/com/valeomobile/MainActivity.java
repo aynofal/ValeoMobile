@@ -1,4 +1,4 @@
-package com.valeomobile;
+package com.valeo.exercise.ammar;
 
 import com.facebook.react.ReactActivity;
 
