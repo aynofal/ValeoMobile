@@ -20,22 +20,9 @@ export const RootStack = ({initialRouteName = 'Home'}: RootStackProps) => {
       initialRouteName={initialRouteName}
       screenOptions={{
         headerShown: false,
-        gestureEnabled: true,
       }}>
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{
-          headerShown: false,
-        }}
-      />
-      <Stack.Screen
-        name="Counter"
-        component={CounterScreen}
-        options={{
-          headerShown: false,
-        }}
-      />
+      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Counter" component={CounterScreen} />
     </Stack.Navigator>
   );
 };

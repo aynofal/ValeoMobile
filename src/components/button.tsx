@@ -38,7 +38,9 @@ const Button: FC<ButtonProps> = buttonProps => {
     <Pressable
       {...pressableProps}
       style={[customStyle, styles.button, backgroundStyle]}>
-      <Text style={[textStyle, styles.buttonTxt, buttonTextStyle]}>{buttonText}</Text>
+      <Text style={[textStyle, styles.buttonTxt, buttonTextStyle]}>
+        {buttonText}
+      </Text>
     </Pressable>
   );
 };
