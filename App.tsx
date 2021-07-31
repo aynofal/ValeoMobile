@@ -15,6 +15,18 @@ import {COLORS} from './src/utils/global-styles';
 import {NavigationContainer} from '@react-navigation/native';
 import {RootStack} from './src/navigation/root-navigator';
 
+// Navigation Configuration: deeplinks
+const config = {
+  screens: {
+    Home: 'home',
+    Counter: 'counter/:toAdd',
+  },
+};
+const linking = {
+  prefixes: ['valeo-mobile://'],
+  config,
+};
+
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -24,7 +36,7 @@ const App = () => {
   };
 
   return (
-    <NavigationContainer>
+    <NavigationContainer linking={linking}>
       <SafeAreaView style={backgroundStyle}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
         <RootStack />
