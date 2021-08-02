@@ -53,6 +53,7 @@ const CounterScreen: FC = () => {
           {currentCount}
         </Text>
         <Button
+          testID={'QR_SCANNER_BUTTON'}
           buttonText={'Open QR Scanner'}
           onPress={toggleIsQRModalVisible}
         />

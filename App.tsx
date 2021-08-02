@@ -8,7 +8,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useMemo} from 'react';
 import {StatusBar, useColorScheme} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {COLORS} from './src/utils/global-styles';
@@ -30,10 +30,13 @@ const linking = {
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? COLORS.dark : COLORS.light,
-    flex: 1,
-  };
+  const backgroundStyle = useMemo(
+    () => ({
+      backgroundColor: isDarkMode ? COLORS.dark : COLORS.light,
+      flex: 1,
+    }),
+    [isDarkMode],
+  );
 
   return (
     <NavigationContainer linking={linking}>

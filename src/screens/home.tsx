@@ -16,6 +16,7 @@ const HomeScreen: FC = () => {
       </Text>
       <Button
         buttonText={'Proceed to Counter Screen'}
+        testID={'HOME_NAV_BUTTON'}
         onPress={() => navigation.navigate('Counter')}
       />
     </View>
