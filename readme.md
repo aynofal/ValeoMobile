@@ -74,3 +74,6 @@ This is an optional step: Open your terminal of choice and execute `yarn start`,
 - Press the build and run button (Looks like a media player play button)
 
 #### This codebase is not configured for a production release as of now.
+
+## QR Code for web-app
+![QR Code](https://github.com/aynofal/ValeoMobile/blob/main/qrcode.png?raw=true)
